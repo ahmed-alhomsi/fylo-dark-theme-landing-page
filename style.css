@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-main {
+  background-color: hsl(218, 28%, 13%);
+}
+
+.btn-cyan {
+  background-color: hsl(176, 68%, 64%);
+}
+
+.h2 {
+  max-width: 35ch;
+}
+
+.btn-large {
+  width: 22%;
+}
+
+.text-short {
+  max-width: 44ch;
+}
+
+.bg-custom {
+  background-color: hsl(219, 30%, 18%);
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.footer {
+  background-color: hsl(216, 53%, 9%);
+}
+
+#wide-input {
+  width: 300px;
+}
+
+#quotes {
+  margin-top: -34px;
+  margin-left: -10px;
+  z-index: -1;
+}
+
+#email-form {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: -5%;
+}
+
+#fylo-absolute {
+  margin-top: -20%;
+}
+
+footer {
+  height: 75vh;
+}
