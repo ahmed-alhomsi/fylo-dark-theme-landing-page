@@ -19,7 +19,7 @@
 }
 
 .btn-large {
-  width: 22%;
+  width: 300px;
 }
 
 .text-short {
@@ -38,6 +38,11 @@
   background-color: hsl(216, 53%, 9%);
 }
 
+.white-space {
+  min-height: 300px;
+  background-color: hsl(216, 53%, 9%);
+}
+
 #wide-input {
   width: 300px;
 }
@@ -50,14 +55,4 @@
 
 #email-form {
   position: absolute;
-  margin-left: 10%;
-  margin-top: -5%;
-}
-
-#fylo-absolute {
-  margin-top: -20%;
-}
-
-footer {
-  height: 75vh;
 }

@@ -11,25 +11,27 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 fixed-top">
       <div class="container">
       <img src="images/logo.svg" alt="fylo logo">
-      <ul class="navbar-nav">
-        <li class="nav-item mx-3">
-          <a href="#" class="nav-link">Features</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a href="#" class="nav-link">Team</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a href="#" class="nav-link">Sign In</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <a href="#" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a href="#" class="nav-link">Team</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a href="#" class="nav-link">Sign In</a>
+          </li>
+        </ul>
+      </div>
       </div>
     </nav>
   </header>
 
-  <main class="bg-main">
+  <main class="bg-main pt-5 mt-5">
 
     <section class="bg-dark text-light py-5">
       <div class="container text-center">
@@ -146,56 +148,61 @@
 
     <section class="bg-dark text-light py-5">
       <div class="container position-relative mb-5">
-        <div class="text-center bg-custom p-5 rounded w-75" id="email-form">
+        <div class="text-center bg-custom p-5 rounded" id="email-form">
           <p class="h1">Get early access today</p>
           <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
             questions, our support team would be happy to help you.</p>
-            <div class="d-flex justify-content-between mx-5 my-2">
-              <div class="form-inline mx-5">
-                <input type="email" class="rounded-pill px-5 py-2" id="wide-input" placeholder="email@example.com">
-                <button class="btn btn-md py-2 btn-cyan rounded-pill mx-3 text-light">Get Started For Free</button>
+            <div class="d-flex justify-content-between my-2">
+              <div class="row mx-auto gx-5">
+                <div class="col-lg-5 col-sm-12">
+                  <input type="email" class="rounded-pill px-5 p-2" id="wide-input" placeholder="email@example.com">
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                  <button class="btn p-2 mt-1 mx-2 btn-cyan rounded-pill text-light btn-large">Get Started For Free</button>
+                </div>
               </div>
             </div>
             <p class="error"></p>
         </div>
       </div>
     </section>
-    
   </main>
+  
+    <div class="white-space"></div>
 
-  <footer class="footer text-light py-5" id="footer">
+  <footer class="footer text-light py-5">
     <div class="container">
-      <div class="row align-items-center mt-5">
-        <div class="col-md-4 mt-5 position-relative">
-          <img id="fylo-absolute" class="mb-4 position-absolute" src="images/logo.svg" alt="logo image">
+      <div class="row align-items-center">
+        <div class="col-md-8 position-relative text-center">
+          <img class="mb-4" src="images/logo.svg" alt="logo image">
           <div class="d-flex align-items-center">
             <img src="images/icon-location.svg" alt="location icon">
             <p class="light mx-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
               dolore magna aliqua</p>
           </div>
         </div>
-        <div class="col-md-2 py-5 mt-5">
-          <div class="d-flex justify-content-between">
-            <img class="h-50" src="images/icon-phone.svg" alt="phone icon">
+        <div class="col-md-4 col-sm-12 py-5">
+          <div class="d-flex justify-content-center">
+            <img class="h-50 mx-2" src="images/icon-phone.svg" alt="phone icon">
             <p>+1-543-123-4567</p>
           </div>
-          <div class="d-flex justify-content-between">
-            <img class="h-50" src="images/icon-email.svg" alt="email icon">
+          <div class="d-flex justify-content-center">
+            <img class="h-50 mx-2" src="images/icon-email.svg" alt="email icon">
             <p>example@fylo.com</p>
           </div>
         </div>
-        <div class="col-md-2 py-5 mt-5">
+        <div class="col-md-4 col-sm-12 py-5 text-center">
           <a href="#" class="nav-link text-light">About Us</a>
           <a href="#" class="nav-link text-light">Jobs</a>
           <a href="#" class="nav-link text-light">Press</a>
           <a href="#" class="nav-link text-light">Blog</a>
         </div>
-        <div class="col-md-2 py-5 mt-5">
+        <div class="col-md-4 col-sm-12 py-5 text-center">
           <a href="#" class="nav-link text-light">Contact Us</a>
           <a href="#" class="nav-link text-light">Terms</a>
           <a href="#" class="nav-link text-light">Privacy</a>
         </div>
-        <div class="col-md-2 py-5 mt-5">
+        <div class="col-md-4 col-sm-12 py-5 text-center">
           <div class="d-flex align-items-center justify-content-center">
             <a href="#" class="text-light"><i class="bi bi-facebook mx-3"></i></a>
             <a href="#" class="text-light"><i class="bi bi-twitter mx-3"></i></a>
@@ -213,20 +220,5 @@
     </p>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </div>
-  <!--
-  
-
-  
-  
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
- -->
 </body>
 </html>
