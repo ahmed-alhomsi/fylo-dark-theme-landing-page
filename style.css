@@ -56,3 +56,17 @@
 #email-form {
   position: absolute;
 }
+
+@media screen and (max-width: 577px) {
+  #email-form {
+    position: relative;
+  }
+
+  #wide-input {
+    max-width: 250px;
+  }
+
+  .btn-large {
+    max-width: 250px;
+  }
+}
