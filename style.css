@@ -1,3 +1,9 @@
+:root {
+  --dark-main: hsl(218, 28%, 13%);
+  --sec: hsl(176, 68%, 64%);
+  --light-main: #fff;
+}
+
 *,
 *::after,
 *::before {
@@ -6,12 +12,20 @@
   box-sizing: border-box;
 }
 
-.bg-main {
+.bg-dark-main {
+  background-color: var(--dark-main);
+}
+
+.bg-light-main {
+  background-color: var(--light-main);
+}
+
+.bg-dark {
   background-color: hsl(218, 28%, 13%);
 }
 
 .btn-cyan {
-  background-color: hsl(176, 68%, 64%);
+  background-color: var(--sec);
 }
 
 .h2 {
@@ -28,6 +42,7 @@
 
 .bg-custom {
   background-color: hsl(219, 30%, 18%);
+  color: #fff;
 }
 
 .z-index-1 {
