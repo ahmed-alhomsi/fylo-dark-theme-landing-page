@@ -42,6 +42,13 @@
   background-color: #fff;
 }
 
+.curvy-background {
+  background-image: url("images/bg-curvy-desktop.svg");
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .h2 {
   max-width: 35ch;
 }
